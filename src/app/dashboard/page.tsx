@@ -71,10 +71,11 @@ export default async function page(props: {
         <SearchBar />
       </div>
       <div className="py-20 mx-auto max-w-3xl">
+        {loading && <div>Loading...</div>}
         {data2 && <Markdown>{data2}</Markdown>}
         <br />
         <br />
-        <hr/>
+        <hr />
         <br />
         <br />
 
