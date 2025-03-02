@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bindaas
 
-## Getting Started
+A unique search engine that not only returns results but also **roasts** your queries with humor! Built with **Next.js, Prisma, PostgreSQL**, and a talking AI to keep things interesting.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Search & Roast:** Enter any query, and the engine will respond with both **relevant results** and a **quirky and funny response**.  
+- **User Query Tracking:** Stores each user's search history and roast scores in a PostgreSQL database using **Prisma ORM**.  
+- **Dynamic Responses:** Uses AI-generated responses to provide unexpected and witty comments on search queries.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js, React, Tailwind CSS  
+- **Backend:** Next.js API Routes, Prisma ORM  
+- **Database:** PostgreSQL  
+- **Libraries Used:**  
+  - `react-markdown` for rendering markdown responses  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Installation & Setup
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/tushar-daiya/.git
+cd talking-search-engine
