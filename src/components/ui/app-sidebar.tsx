@@ -6,6 +6,7 @@ import {
 import { signOut } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { Button } from "./button";
+import { SearchQuery } from "@prisma/client";
 
 export async function AppSidebar() {
   const searchResults = await prisma.searchQuery.findMany({
@@ -24,7 +25,7 @@ export async function AppSidebar() {
             <h1 className="text-2xl font-bold">Search History</h1>
           </SidebarHeader>
           <div className="flex flex-col space-y-4">
-            {searchResults.map((result) => (
+            {searchResults.map((result: SearchQuery) => (
               <div
                 key={result.id}
                 className="flex flex-col space-y-2 overflow-x-hidden"
